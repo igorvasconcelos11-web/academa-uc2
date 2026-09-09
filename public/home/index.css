@@ -1,0 +1,152 @@
+/* navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.logo-icon {
+  background-color: #3b82f6;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #111827;
+}
+
+.navbuttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px; /* Efeito arredondado das pílulas */
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-login {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.btn-login:hover {
+  background-color: #e5e7eb;
+}
+
+.btn-inicio {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-inicio:hover {
+  background-color: #1d4ed8;
+}
+
+/* Inicio Home */
+
+.entry {
+    margin: 8% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+#entry-text {
+    font-family: sans-serif;
+    font-size: 55px;
+    max-width: 80%; 
+}
+
+#entry-text h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#entry-subtext {
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    max-width: 60%; 
+    color: #4b5563;
+    padding-bottom: 1%;
+    
+}
+
+#entry-button{
+    padding: 1.3rem 2rem;      
+    font-size: 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;          
+    border-radius: 9999px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#entry-button:hover{
+    background-color: #111827;
+    transform: scale(1.05);
+
+}
+
+#stars {
+    padding: 3rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 12px; 
+}
+
+#stars img {
+    height: auto;
+    max-width: 250px; 
+}
+
+#stars span {
+    font-size: 14px;
+    color: #4A5568; 
+
+}
