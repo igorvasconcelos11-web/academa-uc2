@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+}
+
+header {
+    height: 65px;
+    background: white;
+    border-bottom: 2px solid #168cff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+header h2 {
+    color: #111827;
+    font-size: 18px;
+}
+
+header h2:first-letter {
+    color: #1677ff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #1677ff;
+}
+
+header p {
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* banner */
+
+main {
+    width: 95%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.banner {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 10px #00000008;
+}
+
+.banner > div:first-child {
+    max-width: 600px;
+}
+
+.banner span {
+    font-size: 10px;
+    color: #e69b00;
+    font-weight: bold;
+}
+
+.banner h1 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+.banner p {
+    color: #687386;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+button {
+    border: none;
+    background: #176cff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    background: #0055e6;
+}
+
+
+/* imagem do banner */
+
+.imagem {
+    width: 260px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado {
+    background: #18233a;
+    width: 210px;
+    height: 120px;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+
+    box-shadow: 0 8px 20px #00000025;
+}
+
+.quadrado > p {
+    color: #ff5f56;
+    font-size: 12px;
+    margin: 0;
+}
+
+.quadrado h3 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.quadrado small {
+    font-size: 8px;
+    color: #5ee68b;
+}
+
+
+/* dias */
+
+.sequencia {
+    background: white;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 8px #00000008;
+}
+
+.sequencia small {
+    color: #8a93a3;
+    font-size: 9px;
+}
+
+.sequencia b {
+    font-size: 11px;
+    display: block;
+}
+
+.dias-texto {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dias-texto > span {
+    font-size: 20px;
+}
+
+.dias-texto small {
+    display: block;
+    margin-top: 3px;
+}
+
+.progresso {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.barras {
+    color: #19c987;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.conquistas {
+    font-size: 13px;
+}
+
+
+/* cursos */
+
+section {
+    margin-top: 35px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.titulo h2 {
+    font-size: 17px;
+    display: inline;
+}
+
+.titulo span {
+    background: #e9f2ff;
+    color: #1976ff;
+    font-size: 9px;
+    padding: 4px 7px;
+    border-radius: 8px;
+    margin-left: 7px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 18px;
+
+    min-height: 220px;
+
+    box-shadow: 0 2px 8px #00000008;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.icone {
+    width: 32px;
+    height: 32px;
+
+    background: #eaf2ff;
+    color: #1976ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.card h4 {
+    font-size: 10px;
+    font-weight: normal;
+    color: #697386;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #8a93a3;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.card label {
+    display: inline-block;
+    margin-top: 20px;
+
+    font-size: 9px;
+    padding: 4px 7px;
+    border-radius: 7px;
+
+    background: #fff3d6;
+    color: #d58a00;
+}
+
+.card a {
+    float: right;
+    margin-top: 21px;
+
+    text-decoration: none;
+    color: #176cff;
+
+    font-size: 9px;
+}
+
+footer {
+    text-align: center;
+    color: #a0a7b3;
+    font-size: 9px;
+    padding: 35px 0;
+}
+
+
+/*parte de baixo*/
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .sequencia {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil {
+        display: none;
+    }
+}
