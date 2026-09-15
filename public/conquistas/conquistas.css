@@ -19,7 +19,6 @@
 html { scroll-behavior: smooth; }
 
 
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -29,38 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at 50% 8%, rgba(34, 96, 255, .18), transparent 25%),
-        radial-gradient(circle at 68% 54%, rgba(0, 218, 202, .08), transparent 25%),
-        radial-gradient(circle at 28% 72%, rgba(25, 90, 220, .08), transparent 25%);
-}
-
-
-.app {
-    position: relative;
-    z-index: 1;
-    width: min(100%, 1470px);
-    margin: 105px auto 0;
-    background: rgba(7, 12, 21, .97);
-    border: 1px solid #121c2c;
-    box-shadow: 0 20px 80px rgba(0,0,0,.55);
-}
-
-.topbar {
-    min-height: 78px;
-    padding: 0 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #172235;
-    background: rgba(8, 13, 22, .96);
-}
-
 .brand, .profile, .nav, .stat-top, .panel-header, .section-heading, .badge-top, .badge-footer {
     display: flex;
     align-items: center;
@@ -68,71 +35,46 @@ body::before {
 
 .brand { gap: 12px; font-size: 20px; }
 
-.Logo {
-    width: 40px;
-    height: 40px;
-}
-
-.Logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.brand-logo {
-    width: 40px;
-    height: 40px;
+/* Transforma o header em um Grid de 3 colunas */
+header {
     display: grid;
-    place-items: center;
-    position: relative;
-    border-radius: 11px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 800;
-    background: linear-gradient(145deg, #20d7ed, #2565ed);
-    box-shadow: 0 0 18px rgba(25, 161, 255, .3);
+    grid-template-columns: 1fr auto 1fr; /* 1fr (livre), auto (tamanho do menu), 1fr (livre) */
+    align-items: center;
+    padding: 2.2rem 5%;
+    background-color: rgba(8, 12, 20, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
 }
 
-.brand-logo span {
-    position: absolute;
-    right: 3px;
-    bottom: 2px;
-    padding: 1px 3px;
-    border-radius: 3px;
-    background: #3676d9;
-    font-size: 6px;
+/* Organiza a logo e o ícone azul lado a lado */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Controla o espaço entre a logo e o ícone azul */
 }
 
-.nav {
-    gap: 5px;
-    padding: 5px;
-    border: 1px solid #17253a;
-    border-radius: 24px;
-    background: #0a1120;
+/* Limpa a formatação anterior do menu (adeus position absolute!) */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
 }
 
-.nav a {
-    padding: 10px 19px;
-    color: #8390a4;
+.navbar a {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
     text-decoration: none;
-    font-size: 13px;
-    border-radius: 18px;
 }
 
-.nav a.active {
-    color: #fff;
-    background: linear-gradient(100deg, #1477e9, #274ed5);
-    box-shadow: 0 0 14px rgba(43, 114, 255, .35);
-}
-
-.profile { gap: 10px; text-align: right; }
-.profile strong { display: block; font-size: 12px; }
-.profile small { color: #00d5dc; font: 11px "JetBrains Mono", monospace; }
-.avatar {
-    width: 38px; height: 38px; display: grid; place-items: center;
-    border-radius: 10px; border: 1px solid #1d3859;
-    background: #101a2a; color: #4ca8ff; font-size: 11px; font-weight: 700;
+.navbar a:hover {
+    color: var(--text);
 }
 
 main { padding: 38px 34px 70px; }
