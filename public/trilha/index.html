@@ -1,15 +1,310 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/trilha.css">
-    <title>Trilha</title>
+    <title>Academa — Minha Trilha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./trilha.css">
 </head>
 
-<body>
+<body class="corpo-pagina">
 
+    <div class="luz-fundo luz-azul"></div>
+    <div class="luz-fundo luz-indigo"></div>
+    <div class="luz-fundo luz-esmeralda"></div>
+
+    <header class="cabecalho-principal">
+        <div class="cabecalho-logo-grupo">
+            <div class="logo-icone">
+                <span class="logo-letra">A</span>
+            </div>
+            <div class="logo-texto-grupo">
+                <span class="logo-texto">Academa</span>
+                <span class="etiqueta-pro">PRO</span>
+            </div>
+        </div>
+
+        <nav class="navegacao-principal">
+            <a class="link-nav" href="#">Explorar</a>
+            <a class="link-nav link-ativo" href="#">
+                <span>Minha Trilha</span>
+                <span class="ponto-pulsante-ciano"></span>
+            </a>
+            <a class="link-nav" href="#">Laboratório</a>
+            <a class="link-nav" href="#">Conquistas</a>
+        </nav>
+
+        <div class="cabecalho-perfil-grupo">
+            <div class="etiqueta-modo-turbo">
+                <span class="ponto-pulsante-esmeralda-recipiente">
+                    <span class="ponto-pulsante-esmeralda-animacao"></span>
+                    <span class="ponto-pulsante-esmeralda-base"></span>
+                </span>
+                <span class="texto-modo-turbo">Modo Turbo</span>
+            </div>
+            <div class="perfil-usuario">
+                <span class="nome-usuario">Rafael</span>
+                <div class="avatar-recipiente">
+                    <div class="avatar-borda">
+                        <div class="avatar-fundo">RF</div>
+                    </div>
+                    <span class="avatar-status"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="secao-cabecalho-dashboard">
+            <div class="dashboard-titulos">
+                <div>
+
+                    <h1 class="titulo-principal">Minha Jornada Tech</h1>
+                </div>
+
+            </div>
+
+            <div class="grade-cartoes">
+
+                <div class="cartao-gamificado cartao-azul">
+                    <div class="brilho-cartao brilho-azul"></div>
+                    <div class="cartao-conteudo">
+                        <div class="cartao-cabecalho">
+                            <span class="etiqueta-cartao-azul">
+                                XP ATUAL
+                            </span>
+                        </div>
+                        <div class="cartao-textos">
+                            <span class="subtitulo-cartao">Level Status</span>
+                            <h2 class="titulo-cartao">Nível 5 <span class="destaque-azul">• Dev Júnior</span></h2>
+                        </div>
+                    </div>
+                    <div class="cartao-rodape">
+                        <div class="barra-progresso-fundo">
+                            <div class="barra-progresso-preenchimento progresso-azul"></div>
+                        </div>
+                        <div class="info-progresso">
+                            <span class="texto-xp-atual">2.450 / 3.000 XP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão 2: Streak / Ofensiva -->
+                <div class="cartao-gamificado cartao-laranja">
+                    <div class="brilho-cartao brilho-laranja"></div>
+                    <div class="cartao-conteudo">
+                        <div class="cartao-cabecalho">
+                            <span class="etiqueta-cartao-laranja">
+                                INTENSIVA ATIVA
+                            </span>
+                        </div>
+                        <div class="cartao-textos">
+                            <span class="subtitulo-cartao">Ritmo de Código</span>
+                            <h2 class="titulo-cartao flex-alinhado">
+                                <span>5 Dias em Sequência!</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="cartao-rodape">
+                        <div class="dias-streak">
+                            <div class="dia-item"><span class="dia-letra">S</span><span class="dia-check">✓</span></div>
+                            <div class="dia-item"><span class="dia-letra">T</span><span class="dia-check">✓</span></div>
+                            <div class="dia-item"><span class="dia-letra">Q</span><span class="dia-check">✓</span></div>
+                            <div class="dia-item"><span class="dia-letra">Q</span><span class="dia-check">✓</span></div>
+                            <div class="dia-item"><span class="dia-letra destaque-laranja">S</span><span
+                                    class="dia-fogo">✓</span>
+                            </div>
+                            <div class="dia-item opaco"><span class="dia-letra">S</span><span
+                                    class="dia-pendente">·</span></div>
+                            <div class="dia-item opaco"><span class="dia-letra">D</span><span
+                                    class="dia-pendente">·</span></div>
+                        </div>
+                        <div class="info-progresso">
+                            <span class="texto-meta">Meta da Semana</span>
+                            <span class="texto-faltante">Faltam 2 dias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão 3: Quest Diária -->
+                <div class="cartao-gamificado cartao-ciano">
+                    <div class="brilho-cartao brilho-ciano"></div>
+                    <div class="cartao-conteudo">
+                        <div class="cartao-cabecalho">
+                            <span class="etiqueta-cartao-ciano">
+                                QUEST DO DIA
+                            </span>
+                        </div>
+                        <div class="cartao-textos">
+                            <span class="subtitulo-cartao">Missão Principal</span>
+                            <h2 class="titulo-cartao-pequeno">Completar desafio da Aula 2 e subir PR</h2>
+                        </div>
+                    </div>
+                    <div class="cartao-rodape-quest">
+                        <div class="status-recompensa">
+                            <span class="ponto-ciano"></span>
+                            <span>Recompensa pronta</span>
+                        </div>
+                        <span class="etiqueta-progresso-aulas">
+                            1/2 Aulas
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Trilha Ativa -->
+        <section class="secao-trilha">
+
+            <div class="cabecalho-trilha">
+                <div class="titulos-trilha">
+                    <div class="etiqueta-trilha-principal">
+                        <span class="ponto-pulsante-azul"></span>
+                        TRILHA PRINCIPAL
+                    </div>
+                    <h2 class="titulo-secao">Back-end com Java & Spring Boot</h2>
+
+                    <div class="tags-tecnologias">
+                        <span class="tag-tech tech-java">
+                            Java 21
+                        </span>
+                        <span class="tag-tech tech-spring">
+                            Spring Boot 3
+                        </span>
+                        <span class="tag-tech tech-sql">
+                            PostgreSQL
+                        </span>
+                    </div>
+                </div>
+                <div class="info-modulos">
+                    <span class="etiqueta-modulos">3 Módulos • 12 Aulas</span>
+                </div>
+            </div>
+
+            <!-- Lista de Aulas -->
+            <div class="lista-aulas">
+
+                <!-- Aula Concluída -->
+                <div class="item-aula aula-concluida">
+                    <div class="aula-info-principal">
+                        <div class="icone-aula-recipiente icone-verde">
+                            <span class="material-symbols-outlined">check</span>
+                        </div>
+                        <div class="aula-textos">
+                            <div class="aula-metadados">
+                                <span class="tag-modulo">Módulo 1</span>
+                                <span class="tag-xp-ganho">+120 XP</span>
+                                <span class="tag-tempo">20 min</span>
+                            </div>
+                            <h3 class="titulo-aula-item">Aula 1: Arquitetura REST e DTOs</h3>
+                        </div>
+                    </div>
+                    <div class="aula-status">
+                        <span class="etiqueta-status-verde">
+                            <span class="material-symbols-outlined icone-mini">check</span> Feito
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Aula em Foco (Ativa) -->
+                <div class="item-aula aula-foco animacao-cartao-brilhante">
+                    <div class="brilho-fundo-foco"></div>
+                    <div class="aula-info-principal topo-z">
+                        <div class="icone-aula-recipiente-destaque">
+                            <div class="icone-fundo-destaque">
+                                <span class="material-symbols-outlined icone-ciano">play_arrow</span>
+                            </div>
+                        </div>
+                        <div class="aula-textos">
+                            <div class="aula-metadados">
+                                <span class="tag-modulo-azul">Módulo 2</span>
+                                <span class="tag-pratica">
+                                    Prática Guiada</span>
+                                <span class="tag-xp-destaque">+150 XP</span>
+                                <span class="tag-tempo-destaque"> 25 min</span>
+                            </div>
+                            <h3 class="titulo-aula-destaque">
+                                Aula 2: Criando sua primeira API
+                            </h3>
+                            <div class="aula-descricao-extra">
+                                <span class="texto-descricao">Mentor IA pronto no terminal</span>
+                                <span class="separador-ponto">•</span>
+                                <span class="texto-assuntos">Rotas REST, Controllers & Responses</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aula-acoes topo-z">
+                        <a class="botao-acao-principal" href="../aula/">
+                            <span>Continuar Desafio</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Aula Bloqueada -->
+                <div class="item-aula aula-bloqueada">
+                    <div class="aula-info-principal">
+                        <div class="icone-aula-recipiente icone-cinza">
+                            <span class="material-symbols-outlined">lock</span>
+                        </div>
+                        <div class="aula-textos">
+                            <div class="aula-metadados">
+                                <span class="tag-modulo-cinza">Módulo 3</span>
+                                <span class="tag-xp-bloqueado"> +200 XP</span>
+                            </div>
+                            <h3 class="titulo-aula-bloqueada">Aula 3: Conectando ao PostgreSQL</h3>
+                            <p class="texto-dica-bloqueio">Libera após concluir Aula 2</p>
+                        </div>
+                    </div>
+                    <div class="aula-status">
+                        <span class="etiqueta-status-cinza">
+                            <span class="material-symbols-outlined icone-mini">lock</span> Bloqueado
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cartão de Dica -->
+        <section class="cartao-dica-mentor">
+            <div class="dica-conteudo">
+                <div class="icone-dica-recipiente">
+                    <span class="material-symbols-outlined icone-ciano">lightbulb</span>
+                </div>
+                <div class="dica-textos">
+                    <div class="dica-cabecalho">
+                        <span class="titulo-dica">
+                            DICA RELÂMPAGO DO MENTOR IA
+                        </span>
+                    </div>
+                    <p class="texto-dica">
+                        Isole os <span class="codigo-destaque">DTOs</span> para blindar seu Controller antes de plugar
+                        as rotas!
+                    </p>
+                </div>
+            </div>
+            <div class="dica-acao">
+                <button class="botao-ver-codigo">
+                    Ver Código Exemplo
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape-principal">
+        <p>© 2026 Academa. Plataforma interativa de alta performance para desenvolvedores.</p>
+    </footer>
 </body>
 
 </html>

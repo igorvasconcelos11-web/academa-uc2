@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Academa — Arena de Prática Tech (Focus Combat)</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link href="./pratica.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="brilho-fundo brilho-fundo-azul"></div>
+    <div class="brilho-fundo brilho-fundo-ciano"></div>
+    <div class="brilho-fundo brilho-fundo-roxo"></div>
+
+    <header class="cabecalho-aula">
+        <div class="cabecalho-aula-conteudo">
+
+            <div class="cabecalho-aula-esquerda">
+                <a class="link-voltar-trilha" href="../trilha/index.html">
+                    <svg class="icone-voltar" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <span>Trilha Java &amp; Spring Boot</span>
+                </a>
+                <span class="divisor-vertical"></span>
+
+                <div class="tag-aula-atual">
+                    <span class="titulo-aula-atual">Aula 2: Criando sua primeira API</span>
+                </div>
+            </div>
+
+            <div class="indicadores-foco">
+
+                <div class="perfil-rafael">
+                    <div class="perfil-textos">
+                        <span class="perfil-nome">Rafael</span>
+                        <span class="perfil-nivel">Nível 5 • Dev Jr</span>
+                    </div>
+                    <div class="avatar-container">
+                        <div class="avatar-moldura">
+                            <div class="avatar-iniciais">RF</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="secao-editor">
+            <div class="brilho-editor"></div>
+
+            <div>
+                <div class="linha-badges-editor">
+                    <div class="badges-esquerda-editor">
+                        <span class="selo-desafio-tecnico">
+                            DESAFIO TÉCNICO
+                        </span>
+                        <span class="selo-linguagem">JavaScript ES6</span>
+                        <span class="selo-nivel-junior">Nível Júnior</span>
+                    </div>
+                    <div class="progresso-fase">
+                        <span class="progresso-fase-texto">Fase 3/8</span>
+                        <div class="progresso-fase-barra">
+                            <div class="progresso-fase-preenchimento" style="width: 37.5%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="titulo-desafio">
+                    <span>O Labirinto do IF/ELSE</span>
+                </h1>
+
+                <div class="cartao-missao">
+                    <div class="missao-conteudo-esquerda">
+                        <div class="missao-texto">
+                            <span class="missao-rotulo">Missão:</span>
+                            <span class="missao-descricao">Escreva a condição para liberar a passagem quando
+                                <span class="codigo-inline-azul">idadeVisitante</span>
+                                for maior ou igual a
+                                <span class="codigo-inline-ambar">18</span>.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mockup do editor (IDE) -->
+                <div class="janela-ide">
+                    <!-- Barra de título -->
+                    <div class="barra-titulo-ide">
+                        <div class="titulo-ide-esquerda">
+                            <div class="bolinhas-mac">
+                                <span class="bolinha-mac bolinha-vermelha"></span>
+                                <span class="bolinha-mac bolinha-amarela"></span>
+                                <span class="bolinha-mac bolinha-verde"></span>
+                            </div>
+                            <div class="aba-arquivo">
+                                <span class="material-symbols-outlined icone-pequeno icone-cor-ambar">javascript</span>
+                                <span>porta_templo.js</span>
+                                <span class="ponto-arquivo-ativo"></span>
+                            </div>
+                        </div>
+                        <div class="status-ide-direita">
+                            <span class="status-utf">
+                                <span class="ponto-verde-pequeno"></span> UTF-8
+                            </span>
+                            <span class="status-lf">LF</span>
+                        </div>
+                    </div>
+
+                    <!-- Corpo do código -->
+                    <div class="corpo-codigo">
+                        <div class="numeros-linha">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                        </div>
+                        <div class="linhas-codigo">
+                            <div class="comentario-codigo">// 1. Constante com o valor a ser checado</div>
+                            <div>
+                                <span class="palavra-chave">const</span>
+                                <span class="variavel-codigo">idadeVisitante</span>
+                                <span class="operador-codigo">=</span>
+                                <span class="valor-codigo">20</span><span class="operador-codigo">;</span>
+                            </div>
+                            <div class="comentario-codigo-espaco">// 2. Digite o teste lógico para validar o acesso
+                            </div>
+
+                            <!-- Linha de input interativa -->
+                            <div class="linha-input-interativa">
+                                <span class="palavra-chave-forte">if</span>
+                                <span class="parenteses-codigo">(</span>
+                                <div class="wrapper-input-codigo">
+                                    <input aria-label="Insira a condição lógica para liberação" autofocus="autofocus"
+                                        class="campo-input-codigo" placeholder="idadeVisitante &gt;= 18" type="text"
+                                        value="idadeVisitante &gt;= 18">
+                                    <span class="cursor-piscante"></span>
+                                </div>
+                                <span class="parenteses-codigo">) {</span>
+                            </div>
+
+                            <div class="recuo-codigo texto-sucesso">
+                                abrirPorta(<span class="texto-sucesso-claro">"Acesso liberado ao labirinto!"</span>);
+                            </div>
+                            <div class="texto-neutro-codigo">
+                                } <span class="palavra-chave-forte">else</span> {
+                            </div>
+                            <div class="recuo-codigo texto-erro">
+                                bloquearEntrada(<span class="texto-erro-claro">"Idade mínima de 18 anos
+                                    exigida."</span>);
+                            </div>
+                            <div class="texto-neutro-codigo">}</div>
+                        </div>
+                    </div>
+
+                    <!-- Rodapé do editor -->
+                    <div class="rodape-ide">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodape-acoes-editor">
+                <button class="botao-executar">
+                    <span>Executar Código</span>
+                </button>
+                <button class="botao-pular">
+                    <span>Pular Desafio</span>
+                    <span class="material-symbols-outlined icone-medio">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+
+        <aside class="barra-lateral-sidekick">
+
+            <div class="cartao-escuro">
+                <div class="recompensas-cabecalho">
+                    <h2 class="recompensas-titulo">
+                        <span class="material-symbols-outlined icone-grande icone-cor-ambar">workspace_premium</span>
+                        <span>Recompensas da Fase</span>
+                    </h2>
+                    <span class="selo-ao-concluir">Ao Concluir</span>
+                </div>
+                <div class="lista-recompensas">
+                    <div class="item-recompensa recompensa-xp">
+                        <div class="icone-recompensa icone-recompensa-ambar">⭐</div>
+                        <div class="recompensa-textos">
+                            <span class="recompensa-titulo-xp">+50 XP Maestria</span>
+                            <span class="recompensa-descricao">Pontos diretos para subir para o Nível 6</span>
+                        </div>
+                    </div>
+                    <div class="item-recompensa recompensa-emblema">
+                        <div class="icone-recompensa icone-recompensa-roxo">🏆</div>
+                        <div class="recompensa-textos">
+                            <span class="recompensa-titulo-emblema">Emblema: Mestre da Lógica</span>
+                            <span class="recompensa-descricao">Troféu exclusivo no perfil</span>
+                        </div>
+                    </div>
+                    <div class="item-recompensa recompensa-velocidade">
+                        <div class="icone-recompensa icone-recompensa-ciano">⚡</div>
+                        <div class="recompensa-textos">
+                            <span class="recompensa-titulo-velocidade">Bônus de Velocidade</span>
+                            <span class="recompensa-descricao-ciano">+25 XP se responder em menos de 2 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartao-escuro">
+                <div class="brilho-card-mentor"></div>
+                <div class="mentor-cabecalho">
+                    <div class="mentor-info">
+                        <div class="icone-mentor-ia">
+                            <span class="material-symbols-outlined icone-grande">smart_toy</span>
+                        </div>
+                        <div>
+                            <h3 class="mentor-nome">
+                                Mentor IA <span class="fonte-mono"></span>
+                            </h3>
+                            <p class="mentor-status-texto">Modo Socrático Ativo</p>
+                        </div>
+                    </div>
+                    <span class="selo-online">
+                        <span class="ponto-ping-verde"></span>
+                        Online
+                    </span>
+                </div>
+
+                <div class="balao-dica">
+                    <div class="balao-dica-seta"></div>
+                    <div class="balao-dica-cabecalho">
+                        <span class="balao-dica-titulo">Dica Relâmpago</span>
+                    </div>
+                    <p class="balao-dica-texto">
+                        O operador de comparação <span class="codigo-inline-azul">&gt;=</span>
+                        verifica se o valor da esquerda é <span class="destaque-forte">MAIOR OU IGUAL</span> ao da
+                        direita.
+                    </p>
+                </div>
+
+                <div class="acoes-mentor">
+                    <div class="grade-botoes-chip">
+                        <button class="botao-chip botao-chip-ciano">
+                            <span class="material-symbols-outlined icone-medio">psychology</span>
+                            <span>Outra dica</span>
+                        </button>
+                        <button class="botao-chip botao-chip-roxo">
+                            <span class="material-symbols-outlined icone-medio">terminal</span>
+                            <span>Explicação detalhada</span>
+                        </button>
+                    </div>
+                    <div class="rodape-mentor-info">
+                        <span>Zero perda de XP por dica</span>
+                        <span class="versao-motor">v2.4 Engine</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="rodape-global">
+        <div class="copyright-texto">
+            © 2026 <span class="copyright-destaque">Academa</span>. Plataforma gamificada para desenvolvedores de
+            alta performance.
+        </div>
+        <div class="links-rodape">
+            <a href="#">Atalhos (Ctrl+/)</a>
+            <a href="#">Documentação</a>
+            <a href="#">Comunidade Discord</a>
+        </div>
+    </footer>
+
+    <div class="modal-sucesso" id="modal-sucesso" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="titulo-modal-sucesso">
+        <div class="conteudo-modal-sucesso">
+            <span class="material-symbols-outlined icone-modal-sucesso" aria-hidden="true">task_alt</span>
+            <p class="rotulo-modal-sucesso">Desafio concluído</p>
+            <h2 id="titulo-modal-sucesso">Parabéns, você acertou!</h2>
+            <p class="texto-modal-sucesso">A condição liberou a passagem do labirinto.</p>
+            <strong class="xp-modal-sucesso">+50 XP</strong>
+            <p class="redirecionamento-modal">Retornando para explorar...</p>
+        </div>
+    </div>
+
+    <script>
+        const respostaCorreta = 'idadeVisitante >= 18';
+        const campoCodigo = document.querySelector('.campo-input-codigo');
+        const botaoExecutar = document.querySelector('.botao-executar');
+        const modalSucesso = document.querySelector('#modal-sucesso');
+        let desafioConcluido = false;
+
+        function executarDesafio() {
+            if (desafioConcluido) {
+                return;
+            }
+
+            const resposta = campoCodigo.value.trim();
+            campoCodigo.removeAttribute('aria-invalid');
+
+            if (resposta !== respostaCorreta) {
+                campoCodigo.setAttribute('aria-invalid', 'true');
+                campoCodigo.focus();
+                return;
+            }
+
+            desafioConcluido = true;
+            modalSucesso.setAttribute('aria-hidden', 'false');
+            modalSucesso.classList.add('modal-sucesso-visivel');
+
+            window.setTimeout(() => {
+                window.location.href = '../explorar/index.html';
+            }, 2500);
+        }
+
+        botaoExecutar.addEventListener('click', executarDesafio);
+        campoCodigo.addEventListener('keydown', (evento) => {
+            if (evento.key === 'Enter') {
+                evento.preventDefault();
+                executarDesafio();
+            }
+        });
+    </script>
+</body>
+
+</html>
