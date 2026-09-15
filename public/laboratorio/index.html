@@ -1,15 +1,283 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/laboratorio.css">
     <title>Laboratório</title>
+=======
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academa — Laboratório de Código</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="laboratorio.css">
+>>>>>>> 11daa74ab86cfdfb74c0f8997f40424cfb895857
 </head>
-
 <body>
 
-</body>
+<div class="app">
 
+<header>
+
+    <a href="#" class="logo">
+        <img src="IMG/logo.png" alt="Academa">
+    </a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../conquistas/index.html">Conquistas</a></li>
+            <li><a href="../explorar/index.html">Explorar</a></li>
+            <li><a href="../laboratorio/index.html">Laboratório</a></li>
+            <li><a href="../trilha/index.html">Trilha</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+  <!--Main content-->
+  <div class="main">
+
+    <!--Sidebar-->
+    <aside class="sidebar">
+
+      <div class="intro-block">
+        <div class="eyebrow"><span class="dot"></span>Ambiente de Experimentação</div>
+        <div class="page-title">Laboratório de Código</div>
+        <div class="page-subtitle">
+          Sandbox inteligente sem regras rígidas. Cole seus scripts, analise bugs e evolua na prática.
+        </div>
+      </div>
+
+      <div class="tools-block">
+        <div class="section-heading">
+          <span class="label">Ferramentas rápidas</span>
+          <span class="shortcut">Ctrl + K</span>
+        </div>
+
+        <div class="tool-list">
+          <div class="tool-card">
+            <img src="/public/laboratorio/IMG/SVG.svg" alt="ícone">
+            <div class="tool-body">
+              <div class="tool-row">
+                <span class="tool-title">Analisar Erro / StackTrace</span>
+                <img src="/public/laboratorio/IMG/SVG@2x-4.png" alt="ícone">
+              </div>
+              <div class="tool-desc">Cole logs ou exceptions e receba o fix.</div>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="/public/laboratorio/IMG/SVG-3.png" alt="ícone">
+            <div class="tool-body">
+              <div class="tool-row">
+                <span class="tool-title">Desafio Relâmpago</span>
+                <img src="/public/laboratorio/IMG/SVG@2x-4.png" alt="ícone">
+              </div>
+              <div class="tool-desc">Resolva 1 enigma rápido em 3 min.</div>
+            </div>
+          </div>
+
+          <div class="tool-card">
+            <img src="/public/laboratorio/IMG/SVG-2.png" alt="ícone">
+            <div class="tool-body">
+              <div class="tool-row">
+                <span class="tool-title">Refatoração Limpa</span>
+                <img src="/public/laboratorio/IMG/SVG@2x-4.png" alt="ícone">
+              </div>
+              <div class="tool-desc">Transforme espaguete em Clean Code.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-header">
+          <span class="dot"></span>
+          <span class="label">Dica Prática do Dia</span>
+        </div>
+        <div class="tip-text">
+          Use cláusulas de retorno antecipado (<code class="cyan">guard clauses</code>) para eliminar
+          aninhamentos infinitos de <code class="indigo">if/else</code>.
+        </div>
+      </div>
+
+      <div class="progresso-card">
+        <div class="progresso-header">
+          <div class="progresso-status">
+            <span class="dot"></span>
+            <span class="label">Modo Turbo Ativo</span>
+          </div>
+          <span class="progresso-xp">+250 XP HOJE</span>
+        </div>
+
+        <div class="progresso-bar-block">
+          <div class="progresso-bar-labels">
+            <span class="name">Combo Bônus (Nível 4)</span>
+            <span class="value">1.750 / 2.000 XP</span>
+          </div>
+          <div class="progresso-track">
+            <div class="progresso-fill"></div>
+          </div>
+        </div>
+
+        <div class="progresso-footer">
+          <div class="streak">
+            <span> Streak</span>
+            <strong>5 dias</strong>
+          </div>
+          <div class="next-badge"> Próxima badge em 250 XP</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!--Chat painel-->
+    <section class="chat-painel">
+
+      <div class="chat-header">
+        <div class="chat-header-left">
+          <div class="status-dot-wrap">
+            <span class="dot"></span>
+            <span class="ring"></span>
+          </div>
+          <div>
+            <div class="chat-title-row">
+              <span class="chat-title">Mentor IA Online</span>
+              <span class="badge-version">v2.4 Live</span>
+            </div>
+            <div class="chat-subtitle">Modo Socrático • Respostas diretas e código limpo</div>
+          </div>
+        </div>
+
+        <div class="chat-header-right">
+          <div class="lang-pill">
+            <span class="jdk">JDK 21</span>
+            <span class="node">/ Node.js</span>
+          </div>
+          <div class="icon-btn">⚙</div>
+        </div>
+      </div>
+
+      <div class="chat-body">
+
+        <div class="relogio-container">
+        <!-- Onde o horário e a data serão exibidos -->
+        <div id="relogio">00:00:00</div>
+        <div id="data">Carregando data...</div>
+    </div>
+
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+
+            // Pega as horas, minutos e segundos (garante 2 dígitos sempre)
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+            // Atualiza o texto do relógio
+            document.getElementById('relogio').textContent = `${horas}:${minutos}:${segundos}`;
+
+            // Atualiza a data no formato local brasileiro (ex: segunda-feira, 14 de setembro)
+            const opcoesData = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+            const dataFormatada = agora.toLocaleDateString('pt-BR', opcoesData);
+            document.getElementById('data').textContent = dataFormatada;
+        }
+
+        // Executa a função a cada 1 segundo (1000 milissegundos)
+        setInterval(atualizarRelogio, 1000);
+
+        // Executa imediatamente para não começar zerado
+        atualizarRelogio();
+    </script>
+
+        <div class="msg-row user">
+          <div class="bubble-user">
+            Não entendi muito bem como funciona a estrutura do IF na programação. Pode me explicar
+            direto ao ponto?
+          </div>
+          <br>
+        </div>
+
+        <div class="msg-row ai">
+          <div class="ai-block">
+            <div class="ai-avatar"><span>AI</span></div>
+
+            <div class="ai-content">
+              <div class="ai-card">
+
+                <div class="ai-card-title-row">
+                  <span class="ai-card-title">Condicionais em 1 Segundo:</span>
+                  <span class="tag-pill">Booleano Puro</span>
+                </div>
+
+                <div class="ai-explainer">
+                  O <code class="keyword">if</code> é um bifurcador: avalia uma condição booleana.
+                  <span class="true">True</span> = executa o bloco;
+                  <span class="false">False</span> = pula tudo e ignora.
+                </div>
+
+                <div class="code-block">
+                  <div class="code-block-header">
+                    <div class="left">
+                      <span class="dot"></span>
+                      <span class="label">Exemplo prático</span>
+                    </div>
+                    <span class="lang">Java / TypeScript</span>
+                  </div>
+                  <pre><span class="tok-purple">if</span><span class="tok-text"> (usuario.</span><span class="tok-blue">isPremium</span><span class="tok-text">()) {
+    </span><span class="tok-cyan">liberarAcessoTotal</span><span class="tok-text">(); </span><span class="tok-comment">// Executa se for TRUE
+</span><span class="tok-text">}</span></pre>
+                </div>
+
+                <div class="ai-question">
+                  Se <code>isPremium = false</code>, o que o compilador faz com essa linha?
+                </div>
+
+              </div>
+
+              <div class="quick-actions">
+                <button class="quick-action">Ver em Java</button>
+                <button class="quick-action">Testar no Playground</button>
+                <button class="quick-action">Rodar Unit Test</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-input-area">
+        <div class="input-bar">
+          <span class="prompt-symbol">&gt;_</span>
+          <input type="text" placeholder="Digite seu raciocínio, snippet ou cole o stacktrace...">
+          <button class="send-btn" aria-label="Enviar mensagem">
+          </button>
+        </div>
+
+        <div class="input-footer">
+          <div class="hint">
+            <span>Pressione</span>
+            <span class="teclado">Enter ↵</span>
+            <span>para enviar</span>
+          </div>
+          <div class="mode-status">
+            <span class="dot"></span>
+            <span>Modo Socrático Ativo</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<script src="https://cdn.userway.org/widget.js" data-account="free"></script>
+
+</body>
 </html>
