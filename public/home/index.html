@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Academa — Aprenda programação na prática</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -13,157 +18,236 @@
 <header>
 
     <a href="#" class="logo">
-        <img src="logo.png" alt="Logo">
+        <img src="logo.png" alt="Academa">
     </a>
 
     <nav class="navbar">
         <ul>
             <li><a href="#">Recursos</a></li>
             <li><a href="#">Como Funciona</a></li>
-            <li><a href="#">Por que nos escolher?</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Planos</a></li>
         </ul>
     </nav>
 
     <div class="navbuttons">
         <a href="../auth/index.html" class="btn btn-login">Entrar</a>
-        <a href="../auth/index.html" class="btn btn-inicio">Começar Grátis</a>
+        <a href="../auth/index.html" class="btn btn-inicio">Começar grátis</a>
     </div>
 </header>
 
 <section class="entry">
-    <div id="entry-text">
-        <h1>Aprenda programação sem travar a mente.</h1>
-    </div>
-    <div id="entry-subtext">
-        <h2>A primeira plataforma gamificada com Inteligência Artificial que ensina código atráves de analogias intuitivas e respeita o seu ritmo biológico.</h2>
+
+    <h1>Aprenda programação na<br>prática. Sem enrolação.</h1>
+    <p class="entry-subtext">A plataforma gamificada com Mentor IA que te ensina código através de projetos reais.</p>
+
+    <a href="../auth/index.html" class="btn-hero">Começar agora</a>
+
+    <div class="social-proof">
+        <!-- Substitua por uma foto real de alunos ou da comunidade -->
+        <img src="images/estrelas.png" alt="Fotos de estudantes da Academa" class="proof-photo">
+        <p>Mais de 5.000 pessoas já estão construindo projetos reais por aqui.</p>
     </div>
 
-    <a href="../auth/index.html">
-    <button id="entry-button">Começar a programar</button>
-    </a>
-
-    <div id="stars">
-        <img src="images/estrelas.jpg" alt="Imagens representando estudantes e métricas de avaliação por estrelas">
-        <p>+ de 5.000 devs aprendendo no seu ritmo e sem sobrecarga mental.<p>
-    </div>
-    <img id="teaserImage" src="images/teaser.jpg" alt="representação do aplicativo em uso">
-
+    <img id="teaserImage" src="images/teaser.jpg" alt="Tela da plataforma Academa com um desafio de código em andamento">
 
 </section>
-<section class="card1">
 
-    <div id="card1-text">
-        <h1>Programação de alto nível com saúde mental.</h1>
+<section class="diferenciais">
+    <div class="text-center">
+        <h1>Por que a Academa é diferente?</h1>
+        <p>Metodologia ativa e ferramentas construídas pra você criar autonomia de verdade no terminal.</p>
     </div>
-    <div id="card1-subtext">
-        <h2>Tecnologia que cuida da sua mente enquanto você constrói projetos reais.</h2>
-    </div>
-    
-    <div class="cards-container">
-        <!-- Cards 1 -->
-        <div class="card1-item">
-            <h3>Mentor IA Dev</h3>
-            <p>Não cuspimos código pronto: te ensinamos a pensar como programador. Entenda qualquer conceito complexo através de analogias simples do dia a dia.</p>
-            <div class="card1-footer">
-                <span class="dot blue"></span>
-                <span>Aprendizado adaptativo</span>
+
+    <div class="z-container">
+        <div class="z-row">
+            <div class="z-text">
+                <h3>Mentor IA Socrático</h3>
+                <p>A gente não te dá a resposta pronta. O Mentor te guia com perguntas estratégicas pra você aprender a pensar como um dev sênior, não só a copiar código.</p>
+            </div>
+            <div class="z-visual">
+                <div class="mockup-terminal">
+                    <div class="terminal-header"><span></span><span></span><span></span></div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">&gt;_</span> Mentor, como otimizo essa query SQL?</p>
+                        <p class="ia-response">Em vez de te dar o código, pensa comigo: você leria todos os livros de uma biblioteca pra achar uma palavra, ou usaria o índice? Como isso se aplica ao banco de dados?</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="card1-item">
-            <h3>Medidor de Cansaço Cognitivo</h3>
-            <p>O foco de um dev tem limite biológico. Nossa inteligência analisa o esforço da sua sessão e sugere pausas estratégicas para garantir retenção máxima sem exaustão.</p>
-            <div class="card1-footer">
-                <span class="dot green"></span>
-                <span>Proteção cognitiva ativa</span>
+        <div class="z-row reverse">
+            <div class="z-text">
+                <h3>Jornada gamificada</h3>
+                <p>Ganhe XP em missões reais, desbloqueie conquistas na arena e mantenha o ritmo diário sem precisar de força de vontade sobre-humana.</p>
+            </div>
+            <div class="z-visual">
+                <div class="mockup-stats">
+                    <div class="stat-bar">
+                        <span class="label">Nível 4 — Backend Node.js</span>
+                        <div class="progress"><div class="fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="streak-box">7 dias seguidos de prática</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="z-row">
+            <div class="z-text">
+                <h3>100% orientado a projetos</h3>
+                <p>Esquece vídeo-aula passiva. Você constrói APIs de microsserviços, bancos relacionais e interfaces modernas pro seu portfólio de produção.</p>
+            </div>
+            <div class="z-visual">
+                <div class="mockup-code">
+                    <code><span class="keyword">const</span> express = require(<span class="string">'express'</span>);<br>
+                    <span class="keyword">const</span> app = express();<br><br>
+                    app.get(<span class="string">'/api/v1/users'</span>, (req, res) =&gt; {<br>
+                    &nbsp;&nbsp;res.status(<span class="number">200</span>).json({ status: <span class="string">'success'</span> });<br>
+                    });</code>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Cards 2 -->
-<section class="card2">
-    <div id="buttoncard1">
-        <p>Passo a passo</p>
-    </div>
-    <div id="card1-text">
-        <h1>Uma jornada desenhada para devs de todos os níveis.</h1>
-    </div>
-    
-    <div class="cards-container">
-        
-        <div class="card2-item">
-            <div class="card-icon blue">🗺️</div>
-            <h3>1. Escolha sua trilha</h3>
-            <p>Do zero ao deploy: Lógica, Front-end, Back-end ou DevOps em trilhas práticas e diretas.</p>
-        </div>
 
-        <div class="card2-item">
-            <div class="card-icon yellow">⚡</div>
-            <h3>2. Monitore o desgaste</h3>
-            <p>Codifique com foco total enquanto nossa métrica previne a fadiga mental e consolida a memória.</p>
-        </div>
-
-        <div class="card2-item">
-            <div class="card-icon purple">💡</div>
-            <h3>3. Destrave com o mentor IA</h3>
-            <p>Travou num bug ou sintaxe?. A IA explica a lógica por trás da solução sem entregar o código de bandeja.</p>
+<section class="timeline-section">
+    <div class="timeline-intro">
+        <!-- Substitua por uma foto real de um aluno estudando ou codando -->
+        <img src="images/logo.png" alt="Estudante praticando programação em um notebook" class="intro-photo">
+        <div>
+            <h1>Como funciona</h1>
+            <p>Três passos entre você e o seu primeiro projeto rodando de verdade.</p>
         </div>
     </div>
-</section>
-<section class="card3">
 
-        <div id="buttoncard2">
-        <p>Diferencias do Academa</p>
-        </div>
-        <div id="card1-text">
-        <h1>Por que aprender na Academa?</h1>
-        <p>O equilíbrio perfeito entre código de produção e neurociência aplicada à educação.</p>
-    </div>
-    
-    <div class="cards-container">
-        
-        <div class="card3-item">
-            <div class="card-icon blue">🚀</div>
-            <h3>100% Prático e Orientado a Projetos</h3>
-            <p>Chega de tutoriais infinitos e cópia cega de código. Aqui você constrói aplicações reais do mundo real desde a primeira semana.</p>
+    <div class="steps-list">
+        <div class="step">
+            <span class="step-index">01</span>
+            <div class="step-content">
+                <h3>Escolha seu projeto</h3>
+                <p>Selecione trilhas em Frontend, Backend ou Fullstack orientadas por especificações técnicas reais da indústria.</p>
+            </div>
         </div>
 
-        <div class="card3-item">
-            <div class="card-icon yellow">🛡️</div>
-            <h3>IA Sensível ao Limite Cognitivo</h3>
-            <p>Algoritmos proprietários que medem o tempo de tela e a complexidade dos desafios, guiando pausas ativas para evitar a fadiga mental.</p>
+        <div class="step">
+            <span class="step-index">02</span>
+            <div class="step-content">
+                <h3>Codifique na prática</h3>
+                <p>Escreva código em desafios incrementais, resolvendo regras de negócio e escalabilidade de uma arquitetura corporativa.</p>
+            </div>
         </div>
 
-        <div class="card3-item">
-            <div class="card-icon purple">🎯</div>
-            <h3>Jornada Hiperpersonalizada</h3>
-            <p>Seu plano de estudos adapta a velocidade e os exemplos de acordo com suas facilidades e dificuldades, sem listas quilométricas desmotivadoras.</p>
+        <div class="step">
+            <span class="step-index">03</span>
+            <div class="step-content">
+                <h3>Destrave com o Mentor IA</h3>
+                <p>Receba perguntas socráticas na hora pra formular hipóteses e construir raciocínio sênior, sem ficar travado sozinho.</p>
+            </div>
         </div>
     </div>
 </section>
-<section class="card-stats">
-    <div class="cards-container">
-        
-        <div class="cardstats-item">
-            <div class="stat-number blue-text">100%</div>
-            <h3>Retenção prática de código</h3>
-            <p>Fixação através de desafios reais</p>
+
+<section class="missao-split">
+    <div class="split-container">
+        <div class="split-left">
+            <!-- Substitua por uma foto real da equipe ou da comunidade -->
+            <img src="images/programando.png" alt="Equipe e comunidade de estudantes da Academa" class="mission-photo">
+            <h1>Nascemos pra transformar desenvolvedores através da prática.</h1>
+            <p>A Academa foi criada por engenheiros e educadores de tecnologia com o propósito de eliminar a teoria passiva e o abismo entre tutoriais genéricos e o código de produção do mundo real. A gente une pedagogia socrática e desafios interativos pra acelerar a autonomia de cada estudante.</p>
         </div>
 
-        <div class="cardstats-item">
-            <div class="stat-number green-text">0</div>
-            <h3>Fadiga mental e frustração</h3>
-            <p>Pausas ativas e ritmo neurocompatível</p>
+        <div class="split-right">
+            <div class="list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div>
+                    <h3>Foco em autonomia</h3>
+                    <p>A gente guia você a pensar e arquitetar soluções reais, sem atalhos que comprometem seu aprendizado.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <div>
+                    <h3>Metodologia ativa</h3>
+                    <p>Código se aprende codando. Nossos desafios simulam a rotina e as decisões diárias da indústria tech.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <div>
+                    <h3>Comunidade e mentoria</h3>
+                    <p>Mais de 5.000 programadores conectados, evoluindo juntos com feedback contínuo e suporte 24 horas por dia.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="cardstats-item">
-            <div class="stat-number gradient-text">24/7</div>
-            <h3>Mentor IA Dev disponível</h3>
-            <p>Analogias e suporte sem travar</p>
-        </div>
-
     </div>
 </section>
+
+<section class="pricing">
+    <div class="text-center">
+        <h1>Invista na sua carreira</h1>
+        <p>Escolha o plano ideal pra acelerar seu aprendizado e construir aplicações reais.</p>
+    </div>
+
+    <div class="pricing-table">
+        <div class="plan-col">
+            <div class="plan-head">
+                <p class="plan-name">Básico</p>
+                <p class="plan-price">Grátis</p>
+            </div>
+            <ul>
+                <li>Acesso a 3 trilhas introdutórias</li>
+                <li>5 interações diárias com o Mentor IA</li>
+                <li>Acesso à comunidade aberta de devs</li>
+            </ul>
+            <a href="../auth/index.html" class="plan-cta">Começar grátis</a>
+        </div>
+
+        <div class="plan-col is-recommended">
+            <p class="plan-tag">Mais escolhido</p>
+            <div class="plan-head">
+                <p class="plan-name">Pro</p>
+                <p class="plan-price">R$ 49<span>/mês</span></p>
+            </div>
+            <ul>
+                <li>Acesso ilimitado a todas as trilhas e projetos</li>
+                <li>Mentor IA Socrático sem limites, o dia inteiro</li>
+                <li>Arena de código e desafios gamificados</li>
+                <li>Certificado de conclusão e feedback em tempo real</li>
+            </ul>
+            <a href="../auth/index.html" class="plan-cta plan-cta-primary">Assinar Pro</a>
+        </div>
+
+        <div class="plan-col">
+            <div class="plan-head">
+                <p class="plan-name">Bootcamps</p>
+                <p class="plan-price">Sob consulta</p>
+            </div>
+            <ul>
+                <li>Mentoria ao vivo e projetos em equipe</li>
+                <li>Acompanhamento com instrutores sêniores</li>
+                <li>Projetos direcionados pra contratação</li>
+            </ul>
+            <a href="#" class="plan-cta">Falar com um consultor</a>
+        </div>
+    </div>
+</section>
+
+<section class="stat-band">
+    <div class="stat">
+        <p class="stat-number">100%</p>
+        <p class="stat-label">Aprendizado com código real, não vídeo-aula passiva</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+        <p class="stat-number">24/7</p>
+        <p class="stat-label">Mentor IA disponível sempre que você travar</p>
+    </div>
+</section>
+
+<footer>
+    <a href="#" class="logo"><img src="logo.png" alt="Academa"></a>
+    <p>© 2026 Academa. Feito por gente que também já travou num bug às 2 da manhã.</p>
+</footer>
 
 <script src="https://cdn.userway.org/widget.js" data-account="free"></script>
 </body>
