@@ -1,4 +1,4 @@
-const CHAVE_API = "AQ.Ab8RN6Lhvbh2X5t4IuPFkuK_-ie8y36OugygV8R7zGiOqBOGug";
+const CHAVE_API = "";
 
 // Modelo usado — o "flash" é o mais rápido e o que tem mais cota gratuita.
 const MODELO = "gemini-3.5-flash-lite";
