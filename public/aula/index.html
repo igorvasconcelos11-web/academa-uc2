@@ -72,7 +72,7 @@
 
         <!-- Reprodutor de Vídeo -->
         <iframe class="video-youtube" width="560" height="315"
-          src="https://www.youtube-nocookie.com/embed/rDkXQfZwiao?si=_aUFaFLl2-mGxj5K&amp;controls=0"
+          src="https://www.youtube.com/embed/WRlfwBof66s?si=LUdgukMATTRTTOgo"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -149,7 +149,7 @@
           </div>
         </header>
 
-        <div class="area-mensagens barra-rolagem-fina">
+        <div class="area-mensagens chat-body barra-rolagem-fina">
           <div class="marcador-inicio-sessao">
             <span class="etiqueta-sessao">Módulo 2 • Sessão Ativa de Código</span>
           </div>
@@ -181,13 +181,13 @@
         <footer class="rodape-chat">
           <form class="formulario-chat" onsubmit="event.preventDefault();">
             <div class="recipiente-entrada">
-              <input class="campo-texto-chat" placeholder="Tire uma dúvida ou responda ao Mentor..." type="text">
+              <input class="campo-texto-chat" placeholder="Tire uma dúvida ou responda ao Mentor..." type="text" autocomplete="off">
               <div class="atalho-teclado oculto-mobile">
                 <span>⌘</span>
                 <span>Enter</span>
               </div>
             </div>
-            <button class="botao-enviar-chat" aria-label="Enviar para o Mentor" type="submit">
+            <button class="botao-enviar-chat send-btn" aria-label="Enviar para o Mentor" type="submit">
               <span class="material-symbols-outlined icone-branco">send</span>
             </button>
           </form>
@@ -208,6 +208,8 @@
   <footer class="rodape-global">
     <p>© 2026 Academa. Plataforma interativa de alta performance para desenvolvedores.</p>
   </footer>
+
+  <script src="../../app/ia.js"></script>
 </body>
 
 </html>

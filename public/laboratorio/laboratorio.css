@@ -130,7 +130,7 @@ position: absolute;
     margin: 0 auto;
     padding: 24px 24px 40px;
     display: grid;
-    grid-template-columns: 420px 1fr;
+    grid-template-columns: 420px minmax(0, 1fr);
     gap: 24px;
     position: relative;
     z-index: 1;
@@ -442,7 +442,8 @@ position: absolute;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    min-height: 740px;
+    height: 740px;
+    min-height: 0;
   }
 
   .chat-header {
@@ -544,6 +545,7 @@ position: absolute;
 
   .chat-body {
     flex: 1;
+    min-height: 0;
     padding: 24px;
     background: var(--bg-panel-darker);
     display: flex;
