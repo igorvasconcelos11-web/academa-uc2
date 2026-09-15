@@ -101,22 +101,12 @@
   }
 
   .brand-logo {
-    width: 36px;
-    height: 36px;
-    padding: 1px;
-    border-radius: var(--radius-lg);
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border-radius: 50%;
     box-shadow: 0 4px 6px -4px rgba(59, 130, 246, 0.25), 0 10px 15px -3px rgba(59, 130, 246, 0.25);
     display: flex;
-  }
-
-  .brand-logo span {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 11px;
-    font-size: 18px;
-    font-weight: 900;
   }
 
   .brand-name-group {
