@@ -1,14 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conquistas</title>
+    <title>Academa — Conquistas & Maestria</title>
+    <link rel="stylesheet" href="conquistas.css">
 </head>
 
 <body>
+    <div class="container">
+        <header class="topbar">
+            <div class="brand">
+                <div span class="Logo"><img src="imagens/academa.jpg" alt="Logo Academa"> </span></div>
+                <strong>Academa</strong>
+            </div>
 
+            <nav class="nav">
+                <a href="#">Explorar</a>
+                <a href="#">Minha Trilha</a>
+                <a href="#">Laboratório</a>
+                <a class="active" href="#">● Conquistas</a>
+            </nav>
+
+            <div class="profile">
+                <div>
+                    <strong>Rafael Moraes</strong>
+                    <small>Dev Nível 5</small>
+                </div>
+                <div class="avatar">RM</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-heading">
+                <div>
+                    <div class="eyebrow">MINHA JORNADA <span>/</span> SALÃO DE TROFÉUS &amp; METAS</div>
+                    <h1>Conquistas &amp; Maestria Técnica <span class="season">Temporada 2025.1</span></h1>
+                </div>
+
+                <div class="filters">
+                    <button class="selected">Todos <b>18</b></button>
+                    <button>Desbloqueados <b class="green">12</b></button>
+                    <button>Em Progresso <b>4</b></button>
+                    <button>Lendários <b class="yellow">2</b></button>
+                </div>
+            </section>
+
+            <section class="stats-grid">
+                <article class="stat-card yellow-card">
+                    <div class="stat-top">
+                        <div>
+                            <span class="stat-label">● OFENSIVA DE CÓDIGO</span>
+                            <h2>14 Dias</h2>
+                        </div>
+                        <div class="stat-icon"><img src="imagens/SVG (6).svg"></div>
+                    </div>
+                    <p>Ritmo diário de commits &amp; desafios concluídos</p>
+                    <div class="stat-bottom">
+                        <span>Melhor sequência:</span>
+                        <strong>21 dias</strong>
+                    </div>
+                </article>
+
+                <article class="stat-card green-card">
+                    <div class="stat-top">
+                        <div>
+                            <span class="stat-label">● TAXA DE PRECISÃO</span>
+                            <h2>94% <small>+3.5% este mês</small></h2>
+                        </div>
+                        <div class="target-icon">◎</div>
+                    </div>
+                    <p>Em compiladores e testes unitários no 1º envio</p>
+                    <div class="stat-bottom">
+                        <span>Testes validados:</span>
+                        <strong>142 / 151</strong>
+                    </div>
+                </article>
+
+                <article class="stat-card blue-card">
+                    <div class="stat-top">
+                        <div>
+                            <span class="stat-label">● PONTUAÇÃO TOTAL</span>
+                            <h2>12.450 XP</h2>
+                        </div>
+                        <div class="stat-icon"><img src="imagens/SVG (5).svg"> </div>
+                    </div>
+                    <p>Acúmulo de maestria e resolução autônoma</p>
+                    <div class="stat-bottom">
+                        <span>Posição no ranking:</span>
+                        <strong class="rank">Top 5% da Temporada</strong>
+                    </div>
+                </article>
+            </section>
+
+            <section class="middle-grid">
+                <article class="panel activity">
+                    <div class="panel-header">
+                        <div>
+                            <h3>▦ Mapa de Atividade &amp; Commits</h3>
+                            <p>Consistência de código e resolução nos últimos 90 dias</p>
+                        </div>
+                        <div class="legend">Menos <i></i><i></i><i></i><i></i><i></i> Mais</div>
+                    </div>
+
+                    <div class="heatmap">
+                        <div class="days">
+                            <span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span>
+                        </div>
+                        <div class="heatmap-grid">
+                            <i></i><i></i><i class="l2"></i><i class="l3"></i><i></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i>
+                            <i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i>
+                            <i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i>
+                            <i></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i>
+                            <i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l4"></i><i class="l3"></i><i class="l2"></i><i class="l4"></i><i class="l3"></i>
+                        </div>
+                    </div>
+
+                    <div class="activity-footer">
+                        <span> &nbsp;58 desafios resolvidos <em>nos últimos 90 dias</em></span>
+                        <strong>96.8% de assiduidade</strong>
+                    </div>
+                </article>
+
+                <article class="panel insight">
+                    <div class="ai-label">✳ INSIGHTS DE PERFORMANCE IA <small>v2.4 Engine</small></div>
+                    <h3>Velocidade de resolução <strong>3.2× maior</strong> em Spring Boot.</h3>
+                    <p>Seu tempo médio de depuração caiu drasticamente após o domínio de Arquitetura em Camadas e DTOs.</p>
+
+                    <div class="insight-list">
+                        <div><span><img src="imagens/SVG (9).svg"></span> Pico de Produtividade <b>Terças &amp; Quintas (19h–21h)</b></div>
+                        <div><span><img src="imagens/SVG (8).svg"></span> Destaque de Código <b>Clean Code &amp; Exception Handling</b></div>
+                        <div><span><img src="imagens/SVG (7).svg"></span> Próximo Milestone <b>Spring Security + JWT (+450 XP)</b></div>
+                    </div>
+
+                    <div class="mentor">
+                        <span>Recomendação do Mentor</span>
+                        <a href="#">Iniciar Treino Sugerido →</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="badges-section">
+                <div class="section-heading">
+                    <div>
+                        <h2><img src="imagens/SVG (4).svg"></span> Mural de Emblemas &amp; Badges de Maestria</h2>
+                        <p>Certificados de domínio técnico alcançados por resolução prática.</p>
+                    </div>
+                    <span class="highlight">3 de 6 em Destaque Desbloqueados</span>
+                </div>
+
+                <div class="badges-grid">
+                    <article class="badge-card gold">
+                        <div class="badge-top"><span class="badge-icon"><img src="imagens/SVG.svg"></span><span class="badge-tag">OURO · NÍVEL 3</span></div>
+                        <h3>Mestre dos Algoritmos</h3>
+                        <p>Completou 20 desafios de lógica sem pedir resposta pronta.</p>
+                        <div class="badge-footer"><strong>✓ Desbloqueado</strong><span>Nível 3/3 · Concluído</span></div>
+                    </article>
+
+                    <article class="badge-card cyan">
+                        <div class="badge-top"><span class="badge-icon"><img src="imagens/SVG (1).svg"></span><span class="badge-tag">CIANO · ESPECIAL</span></div>
+                        <h3>Arquiteto de APIs</h3>
+                        <p>Construiu 5 endpoints RESTful seguindo o padrão DTO e Clean Arch.</p>
+                        <div class="badge-footer"><strong>✓ Desbloqueado</strong><span>Nível 2/2 · Concluído</span></div>
+                    </article>
+
+                    <article class="badge-card purple">
+                        <div class="badge-top"><span class="badge-icon">>_</span><span class="badge-tag">VIOLETA · IA MENTOR</span></div>
+                        <h3>Código Socrático</h3>
+                        <p>Iterou com o Mentor IA focado em arquitetura sem pedir soluções diretas.</p>
+                        <div class="badge-footer"><strong>✓ Desbloqueado</strong><span>10/10 Interações</span></div>
+                    </article>
+
+                    <article class="badge-card blue">
+                        <div class="badge-top"><span class="badge-icon"><img src="imagens/SVG (2).svg"></span><span class="badge-tag">EM ANDAMENTO</span></div>
+                        <h3>Mestre do Spring Boot</h3>
+                        <p>Conclua todos os módulos avançados de Java &amp; Spring Data JPA.</p>
+                        <div class="progress"><div></div></div>
+                        <div class="progress-label"><span>Progresso</span><strong>2/5 Módulos (40%)</strong></div>
+                    </article>
+
+                    <article class="badge-card locked">
+                        <div class="badge-top"><span class="badge-icon">♢</span><span class="badge-tag">BLOQUEADO</span></div>
+                        <h3>Muralha de Segurança</h3>
+                        <p>Implemente autenticação JWT, refresh token e roles de acesso granulares.</p>
+                        <div class="badge-footer"><span>♧ Requer Nível 6</span><span>0/3 Desafios</span></div>
+                    </article>
+
+                    <article class="badge-card legendary">
+                        <div class="badge-top"><span class="badge-icon">☆</span><span class="badge-tag">● LENDÁRIO</span></div>
+                        <h3>Hackathon Semanal Academa</h3>
+                        <p>Conquiste o 1º lugar na arena de código ao vivo contra outros desenvolvedores.</p>
+                        <div class="badge-footer"><strong>◷ Abre Sexta às 20h</strong><strong>+2.500 XP</strong></div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <span>● Academa Sync Ativo · v3.8.1 (build dev-mode)</span>
+            <span>Gamificação focada em código limpo, autonomia e consistência prática.</span>
+        </footer>
+    </div>
+    <script src="scriptac.js"></script>
 </body>
-
 </html>
